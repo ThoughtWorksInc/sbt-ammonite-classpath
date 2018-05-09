@@ -19,13 +19,13 @@ object MyObject {
 ```
 
 ``` bash
-$ sbt Runtime/fullClasspath/exportToAmmoniteScript && amm --predef target/scala-2.12/fullClasspath-Runtime.sc
+$ sbt Test/fullClasspath/exportToAmmoniteScript && amm --predef target/scala-2.12/fullClasspath-Test.sc
 ...
 ...
 ...
 [success] Total time: 1 s, completed Apr 17, 2018 10:11:08 AM
 Loading...
-Compiling /private/tmp/example/target/scala-2.12/fullClasspath-Runtime.sc
+Compiling /private/tmp/example/target/scala-2.12/fullClasspath-Test.sc
 Welcome to the Ammonite Repl 1.1.0
 (Scala 2.12.4 Java 1.8.0_162)
 If you like Ammonite, please support our development at www.patreon.com/lihaoyi
@@ -44,8 +44,8 @@ Loading...
 Welcome to the Ammonite Repl 1.1.0
 (Scala 2.12.4 Java 1.8.0_162)
 If you like Ammonite, please support our development at www.patreon.com/lihaoyi
-@ import $file.target.`scala-2.12`.`fullClasspath-Runtime` 
-Compiling /private/tmp/example/target/scala-2.12/fullClasspath-Runtime.sc
+@ import $file.target.`scala-2.12`.`fullClasspath-Test` 
+Compiling /private/tmp/example/target/scala-2.12/fullClasspath-Test.sc
 import $file.$                                          
 
 @ mypackage.MyObject.hello() 
