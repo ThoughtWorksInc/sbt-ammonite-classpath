@@ -27,7 +27,20 @@ object AmmoniteClasspath extends AutoPlugin {
       val code = {
         def ammonitePaths =
           List(q"_root_.ammonite.ops.Path(${(!Each((classpathKey in configuration).value)).data.toString})")
-        q"interp.load.cp(Seq(..$ammonitePaths))"
+
+        def mkdirs = List {
+          val ammonitePath = !Each(ammonitePaths)
+          q"""
+          if (!_root_.ammonite.ops.exists($ammonitePath)) {
+            _root_.ammonite.ops.mkdir($ammonitePath)
+          }
+          """
+        }
+
+        q"""
+        ..$mkdirs
+        interp.load.cp(Seq(..$ammonitePaths))
+        """
       }
       val file = (crossTarget in configuration).value / s"${classpathKey.key.label}-${configuration.id}.sc"
       IO.write(file, code.syntax)
