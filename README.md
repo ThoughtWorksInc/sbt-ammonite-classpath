@@ -33,6 +33,10 @@ If you like Ammonite, please support our development at www.patreon.com/lihaoyi
 Hello, World!
 ```
 
+## Related work
+
+[sbt-ammonite](https://github.com/alexarchambault/sbt-ammonite) is a sbt 0.13 plug-in to launch Ammonite REPL. It automatically pass the classpath instead of creating a file, however it does not support Jupyter Scala.
+
 ## Requirements
 
 * Sbt 1.x
