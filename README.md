@@ -6,7 +6,7 @@
 
 ``` sbt
 // project/plugins.sbt
-addSbtPlugin("com.thoughtworks.deeplearning" % "sbt-ammonite-classpath" % "1.0.0")
+addSbtPlugin("com.thoughtworks.deeplearning" % "sbt-ammonite-classpath" % "latest.release")
 ```
 
 ``` scala
