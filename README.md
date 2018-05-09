@@ -33,6 +33,24 @@ If you like Ammonite, please support our development at www.patreon.com/lihaoyi
 Hello, World!
 ```
 
+Alternatively the classpath can be dynamically loaded in an `import $file` statement, too:
+
+``` bash
+$ amm
+```
+
+```
+Loading...
+Welcome to the Ammonite Repl 1.1.0
+(Scala 2.12.4 Java 1.8.0_162)
+If you like Ammonite, please support our development at www.patreon.com/lihaoyi
+@ import $file.target.`scala-2.12`.`fullClasspath-Runtime` 
+Compiling /private/tmp/example/target/scala-2.12/fullClasspath-Runtime.sc
+import $file.$                                          
+
+@ mypackage.MyObject.hello() 
+Hello, World!
+```
 ## Related work
 
 [sbt-ammonite](https://github.com/alexarchambault/sbt-ammonite) is a sbt 0.13 plug-in to launch Ammonite REPL. It automatically pass the classpath instead of creating a file, however it does not support Jupyter Scala.
