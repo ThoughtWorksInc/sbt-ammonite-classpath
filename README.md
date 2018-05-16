@@ -53,7 +53,7 @@ Hello, World!
 ```
 ## Related work
 
-[sbt-ammonite](https://github.com/alexarchambault/sbt-ammonite) is a sbt 0.13 plug-in to launch Ammonite REPL. It automatically pass the classpath instead of creating a file, however it does not support Jupyter Scala.
+[sbt-ammonite](https://github.com/alexarchambault/sbt-ammonite) is an sbt 0.13 plug-in to launch Ammonite REPL. It automatically pass the classpath instead of creating a file, however it does not support Jupyter Scala.
 
 ## Requirements
 
