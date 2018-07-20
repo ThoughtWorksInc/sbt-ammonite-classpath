@@ -25,8 +25,9 @@ object AmmoniteClasspath extends AutoPlugin {
 
     exportToAmmoniteScript in classpathKey in configuration := {
       val code = {
-        def ammonitePaths =
-          List(q"_root_.ammonite.ops.Path(${(!Each((classpathKey in configuration).value)).data.toString})")
+        def ammonitePaths = List {
+          q"_root_.ammonite.ops.Path(${(!Each((classpathKey in configuration).value)).data.toString})"
+        }
 
         def mkdirs = List {
           val ammonitePath = !Each(ammonitePaths)
