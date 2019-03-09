@@ -1,6 +1,6 @@
 # sbt-ammonite-classpath
 
-**sbt-ammonite-classpath** is an sbt plug-in to export classpath of an sbt project to Ammonite Script, which can be then used in Ammonite REPL or Jupyter Scala.
+**sbt-ammonite-classpath** is an sbt plug-in to export classpath of an sbt project to Ammonite Script, which can be then used in [Ammonite](https://ammonite.io/) or [Almond](http://almond.sh/).
 
 ## Usage
 
