@@ -33,7 +33,7 @@ If you like Ammonite, please support our development at www.patreon.com/lihaoyi
 Hello, World!
 ```
 
-Alternatively the classpath can be dynamically loaded in an `import $file` statement, too:
+Alternatively the classpath can be dynamically loaded by an `import $file` statement, too:
 
 ``` bash
 $ amm
