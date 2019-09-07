@@ -2,10 +2,10 @@ sbtPlugin := true
 
 organization in ThisBuild := "com.thoughtworks.deeplearning"
 
-libraryDependencies += "com.thoughtworks.dsl" %% "keywords-each" % "1.5.1"
+libraryDependencies += "com.thoughtworks.dsl" %% "keywords-each" % "1.5.2"
 
-addCompilerPlugin("com.thoughtworks.dsl" %% "compilerplugins-bangnotation" % "1.5.1")
+addCompilerPlugin("com.thoughtworks.dsl" %% "compilerplugins-bangnotation" % "1.5.2")
 
-addCompilerPlugin("com.thoughtworks.dsl" %% "compilerplugins-reseteverywhere" % "1.5.1")
+addCompilerPlugin("com.thoughtworks.dsl" %% "compilerplugins-reseteverywhere" % "1.5.2")
 
 libraryDependencies += "org.scalameta" %% "scalameta" % "1.7.0"
