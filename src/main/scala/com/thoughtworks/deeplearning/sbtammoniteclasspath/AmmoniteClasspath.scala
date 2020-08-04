@@ -15,7 +15,7 @@ object AmmoniteClasspath extends AutoPlugin {
 
   object autoImport {
     val exportToAmmoniteScript = taskKey[File](
-      "Export classpath as a .sc file, which can be loaded by another ammonite script or a Jupyter Scala notebook")
+      "Export classpath as a .sc file, which can be loaded by another ammonite script or an Almond notebook")
   }
   import autoImport._
 
