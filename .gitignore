@@ -3,4 +3,5 @@ local.sbt
 secret/
 .metals/
 .bloop/
+.vscode/
 metals.sbt
