@@ -52,7 +52,7 @@ object AmmoniteClasspath extends AutoPlugin {
     val classpathKey = !Each(allClasspathKeys)
 
     Seq(
-      configuration / classpathKey  / exportToAmmoniteScript := {
+      configuration / classpathKey / exportToAmmoniteScript := {
         val code = {
           def ammonitePaths = List {
             q"_root_.ammonite.ops.Path(${(!Each((configuration / classpathKey).value)).data.toString})"
@@ -102,7 +102,7 @@ object AmmoniteClasspath extends AutoPlugin {
   private def runTask(
       ammConf: Configuration,
       backingConf: Configuration,
-      classpath: TaskKey[Classpath],
+      classpath: TaskKey[sbt.Keys.Classpath],
       scalaRun: Def.Initialize[Task[ScalaRun]],
   ): Def.Initialize[Task[Unit]] = {
     import Def.parserToInput

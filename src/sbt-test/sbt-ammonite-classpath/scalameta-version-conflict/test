@@ -1,0 +1,3 @@
+# check if classpath script file gets created
+> compile:fullClasspath::exportToAmmoniteScript
+$ exists target/scala-2.12/fullClasspath-Compile.sc
