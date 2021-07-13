@@ -17,4 +17,4 @@ addCompilerPlugin("com.thoughtworks.dsl" %% "compilerplugins-bangnotation" % "1.
 
 addCompilerPlugin("com.thoughtworks.dsl" %% "compilerplugins-reseteverywhere" % "1.5.3")
 
-libraryDependencies += "org.scalameta" %% "scalameta" % "4.4.5"
+libraryDependencies += "org.scalameta" %% "scalameta" % "4.4.24"
