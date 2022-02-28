@@ -55,14 +55,14 @@ object AmmoniteClasspath extends AutoPlugin {
       configuration / classpathKey / exportToAmmoniteScript := {
         val code = {
           def ammonitePaths = List {
-            q"_root_.ammonite.ops.Path(${(!Each((configuration / classpathKey).value)).data.toString})"
+            q"_root_.os.Path(${(!Each((configuration / classpathKey).value)).data.toString})"
           }
 
           def mkdirs = List {
             val ammonitePath = !Each(ammonitePaths)
             q"""
-            if (!_root_.ammonite.ops.exists($ammonitePath)) {
-              _root_.ammonite.ops.mkdir($ammonitePath)
+            if (!_root_.os.exists($ammonitePath)) {
+              _root_.os.makeDir.all($ammonitePath)
             }
             """
           }

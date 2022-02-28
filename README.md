@@ -112,8 +112,8 @@ res2: LsSeq =
 By default it will use the `"latest.release"` version of Ammonite, but if you would like to change it, you can override `ammoniteVersion` setting, e.g.:
 
 ``` scala
-ammoniteVersion := "2.1.4"
-Test / ammoniteVersion := "2.2.0"
+ammoniteVersion := "2.5.2"
+Test / ammoniteVersion := "2.5.2"
 ```
 
 ## Related work
